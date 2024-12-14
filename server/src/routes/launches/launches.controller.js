@@ -22,6 +22,15 @@ async function httpGetAllLaunches(req, res) {
   return res.status(200).json(launches);
 }
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * @function httpAddNewLaunch
+ * @description Add a new launch.
+ * @param {http.IncomingMessage} req - The request object.
+ * @param {http.ServerResponse} res - The response object.
+ * @returns {Promise<void>}
+ */
+/******  696a8a91-d9a2-4200-a5ff-a0e55d75bbde  *******/
 async function httpAddNewLaunch(req, res) {
   const launch = req.body;
 

@@ -6,6 +6,13 @@ const {
 } = require("../../models/launches.model");
 const { getPagination } = require("../../services/query");
 
+/**
+ * @function httpGetAllLaunches
+ * @description Get all launches.
+ * @param {http.IncomingMessage} req - The request object.
+ * @param {http.ServerResponse} res - The response object.
+ * @returns {Promise<void>}
+ */
 async function httpGetAllLaunches(req, res) {
   const { skip, limit } = getPagination(req.query);
   console.log("Helooooooooooooooooo");

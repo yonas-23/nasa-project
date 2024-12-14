@@ -55,6 +55,14 @@ async function httpAddNewLaunch(req, res) {
   return res.status(201).json(launch);
 }
 
+/**
+ * @function httpDeleteLaunch
+ * @description Abort a launch.
+ * @param {http.IncomingMessage} req - The request object.
+ * @param {http.ServerResponse} res - The response object.
+ * @returns {Promise<void>}
+ */
+
 async function httpDeleteLaunch(req, res) {
   const launchId = +req.params.id;
   const existsLaunch = await existsLaunchWithId(launchId);
